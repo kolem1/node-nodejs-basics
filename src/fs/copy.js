@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export const copy = async () => {
-  const filesFolderPath = join("files");
+  const filesFolderPath = join(__dirname, "files");
   const filesCopyFolderPath = join(__dirname, "files_copy");
   const errorMessage = "FS operation failed";
   try {

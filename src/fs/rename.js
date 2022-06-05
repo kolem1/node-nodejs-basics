@@ -5,7 +5,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export const rename = async () => {
     const wrongFilepath = path.join(__dirname, "files", "wrongFilename.txt");
-    const filepath = path.join(__dirname, "files", "properFilename.txt");
+    const filepath = path.join(__dirname, "files", "properFilename.md");
     const errorMessage = "FS operation failed";
     try {
         await fs.access(filepath);

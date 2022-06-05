@@ -1,5 +1,5 @@
 export const parseArgs = () => {
-    const args = process.argv;
+    const args = process.argv.slice(2);
     const regExp = /^--/;
     args.forEach((arg, i, arr) => {
         if (regExp.test(arg)) {
